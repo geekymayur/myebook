@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-md-10 offset-md-1 header">
+      <div>
+        <h1 class="text-center">Javascript</h1>
+      </div>
+      <div class="navigation">
+        <a href="/" class="btn btn-sm btn-primary">Main Menu</a>
+      </div>
+    </div>
+    <div class="col-md-10 offset-md-1">
+      <div class="row p-0">
+        <%- partial('partial/js-side-bar', {navItem : navItem }) %>
+        <div class="col-md-9 content-bar">
+            <h3 class="text-center"><%- topicName %></h3>
+            <hr>
+          <h4> What is variable ?</h3>
+          <p>Answer- 
+            <br>
+            -> If I wanted to simply describe a variable then I would like to say a variable is just a name of the specific value. <br>
+            -> So now let me first tell you how to create a variable.
+
+            <br>
+            e.g- 
+            <div  class="code">
+              // Variable <br>
+              let Age = 24;  <br> <br>
+              // Display Varibale Value <br>
+              console.log(Age);   <br>
+ //-------------------//
+ <br>
+
+            </div>
+          </p>
+<h4>What is constant</h4>
+<p>
+  Answer- <br>
+  -> In ES6 a new keyword added in the Javascript which is <code>const</code> <br>
+  -> constant also hold value but unline variable it can't be changed after initialization.
+
+  <div class="code">
+//creating constant <br>
+    const  TEMP = 12.4, CITY = "Begusarai"; <br> <br>
+
+    // Display constant <br>
+    console.log(TEMP); <br>
+    console.log(CITY);
+    <br>
+  </div>
+</p>
+ <h4>What is Identifier ?</h4>
+ <p> Answer- <br>
+   -> Variable and constant are usually call Identifier. <br>
+  </p>
+<h5>Naming Roles of Identifiers</h5>  
+<p>
+  1. Identifier consists of letter numbers Underscores( _ ) and the Dollar sign ($). <br>
+  2. Unicode character are allowed. <br>
+  3. Identifier must start with the letter Dollar sign ( $ ) or Underscores ( _ ) <br>
+  4. Identifier cannot be a reserved word.
+</p>
+
+<h5>Reserved words - are the words in the Javascript created for specific task they can't be used as Identifier if your do that than your will get an error message.</h5> <br>
+
+<h3>What is Literals ? </h3>
+<p>
+  Answer- <br>
+  -> So the Literal means you are providing a value directly in the program.
+  <br>
+  -> Literals is just the way to create Identifier with the value.
+  <br>
+
+  <div class="code">
+    //Literal 
+    <br>
+    let Goal = 'games make me happy'; <br>
+let reference = Goal; <br>
+    console.log(reference) <br>
+  </div>
+</p>
+
+
+
+
+
+
+          <hr />
+          <a href="/javascript" class="btn btn-sm btn-danger float-left">Previous Topic</a>
+          <a href="/data-types" class="btn btn-sm btn-danger float-right">Next topic</a>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  

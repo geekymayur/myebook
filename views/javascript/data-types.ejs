@@ -1,0 +1,125 @@
+<div class="row">
+    <div class="col-md-10 offset-md-1 header">
+      <div>
+        <h1 class="text-center">Javascript</h1>
+      </div>
+      <div class="navigation">
+        <a href="/" class="btn btn-sm btn-primary">Main Menu</a>
+      </div>
+    </div>
+    <div class="col-md-10 offset-md-1">
+      <div class="row p-0">
+        <%- partial('partial/js-side-bar', {navItem : navItem }) %>
+        <div class="col-md-9 content-bar">
+            <h3 class="text-center"><%- topicName %></h3>
+            <hr>
+          <h3 class="text-center"><b>Primitive Type </b></h3>
+          <p>
+           Primitive data types are immutable.
+           immutable means we can't change the value of variable after initialization.
+
+           <div class="code">
+               let Age = 22;    //  Declare variable age with value 24 <br>
+age = 32 ; // Create new value location
+               <br>
+               console.log(Age); <br> <br>
+//---------------------------------------// <br>
+ Age = "Hello " + "World";
+ <br>
+ console.log(Age); // contatination if string <br>
+
+ const inf = infinity ; // infinity <br>
+         const ninf = -infinity ;  // negative infinity  <br>
+         const nan = NaN  ; // Not a  number    
+           </div>
+          </p>
+ <h4>string</h4>
+ <p>
+     -> String is just a simple text data. <br>
+     -> we can specify string in the single or double quotes (" ") or ( ' '). <br>
+    
+     <div class="code">
+         let text = " Hello this is String Data type "; 
+     </div>
+ </p>
+<h4>Boolean</h4>
+<p>
+    -> Boolean is just a value type that have only two possible values. <br> true and false. <br>
+    -> 
+<div class="code">
+    let Do = true;  <br>
+    let More = false; <br>
+</div>
+</p>
+<h4>Symbols</h4>
+<p>
+    1. In ecmascript 6 we have a new type Symbols. <br>
+    2. symbols is the new data types in es6 which represent Unique tokens. <br>
+    3. Once you create a symbols it is unique and it will not match any other symbols. <br>
+ <div class="code">
+     // Create a symbols 
+     <br>
+     const blue = symbol();
+     <br>
+     const white = symbols("color white");
+ <br>
+     blue === white; // false
+ </div>
+</p>
+<h4>Null and Undefined</h4>
+<p>
+    -> Javascript has two special types null and undefined.
+     <br>
+     -> Now has only one possible value which is null and undefined has only one possible value undefined. <br>
+    -> Both null and undefined Represent something that doesn't exist.
+<br>
+ <div class="code">
+     let myvalue  = null ; <br>
+      let myvalue1 ;  <br>
+      console.log(myvalue); // null  <br>
+      console.log(myvalue1);  // undefined <br>
+ </div>
+</p> 
+ <hr> <br>
+<h3 class="text-center">
+<b> 
+    Object Data Type 
+</b>
+</h3>
+<h3> Object Type </h3>
+<ol>
+    <li>
+        Array
+    </li>
+    <li>
+        Date
+    </li>
+    <li>
+        Regular expression
+    </li>
+    <li>
+        Map and weakMap
+    </li>
+    <li>
+        Set and Weakset
+    </li>
+</ol>
+
+<h4>What is object ?</h4>
+<p>
+    -> Object are mutable. <br>
+    -> can change any value anytime. <br>
+    -> Object is just like a container thet can have different kind of data. <br>
+    -> object literal syntax : { } <br>
+</p>
+          <hr />
+          
+          <a href="/literal-variable-contant" class="btn btn-sm btn-danger float-left">Previous Topic</a>
+
+          <a href="#" class="btn btn-sm btn-danger float-right disabled">Next Topic</a>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  
